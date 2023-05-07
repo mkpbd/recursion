@@ -151,3 +151,38 @@ function factorial(n) {
 
 //console.log(facts);
 
+
+
+// this code 
+
+
+function recursionArray(data = [], l = 0){
+
+
+    let d  = 0;
+    d += l;
+
+    if(data.length == l ){
+
+        
+        return  0;
+    }
+
+     console.log(data[d]);
+     recursionArray(data[d] );
+
+
+
+
+
+    // for(let i = 0; i < data.length; i++) {
+
+    //     console.log(data[i]);
+    // }
+
+
+
+}
+
+
+recursionArray([2,3,4,5,6,8,9,10]);
