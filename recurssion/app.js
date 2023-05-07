@@ -90,3 +90,64 @@ function numberOfRangePrint (startStep, endStep){
 }
 
 //numberOfRangePrint(10, 100)
+
+
+
+
+function  fibonacci(number) {
+
+// basic condtion 
+    if(number == 0 ) return 0;
+
+    if(number == 1) return 1;
+
+    // recursive function call two times with fourmulla
+    return fibonacci(number - 1 ) +  fibonacci(number - 2);
+
+  }
+
+
+//   console.log(fibonacci(10));
+
+
+
+// fibonacci without use recurssion 
+// let n1 = 0, n2 = 1, tem = 0;
+
+// for(let i = 2; i<= 10;  i++){
+
+//     tem = n1 + n2;
+
+//     n1 = n2;
+//     n2 = tem;
+// }
+
+// console.log(tem);
+
+
+
+function factorial(n) {
+
+    // basic condtion 
+    if(n <1) return 1;
+
+    // recursive function call 
+    return n * factorial(n-1);
+}
+
+
+// console.log(factorial(5));
+
+
+// factorial  without recursive function 
+
+// let facts = 1;
+
+// for(let i = 1; i <= 5; i++ ){
+//     facts = facts * i;
+//     //console.log(facts);
+// }
+
+
+//console.log(facts);
+
