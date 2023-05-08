@@ -29,3 +29,66 @@ function multiply(number) {
 }
 
 // console.log(multiply(1234));
+
+
+
+
+function GetZeroNumberCounting(n, targetNumber){
+
+    if(n == 0){
+        return targetNumber;
+    }
+
+    let remaining  = Math.floor(n%10);
+
+    if(remaining == 0){
+
+        return GetZeroNumberCounting(Math.floor(n/10), targetNumber + 1);
+    }else{
+
+        return GetZeroNumberCounting(Math.floor(n/10), targetNumber )
+    }
+
+}
+
+// console.log(GetZeroNumberCounting(123004500, 0))
+
+
+
+function EvenNumber(n) { 
+
+    if(n < 0 ){
+        return 0;
+    }
+
+    // let remaining = Math.floor(n%10);
+
+    EvenNumber(Math.floor(n-1));
+
+    if(Math.floor(n%2) == 0){
+        console.log(n)
+    }
+
+    
+
+}
+
+
+
+//  console.log(EvenNumber(20))
+
+
+
+function oddNumber(n) {
+
+    if(n < 0 ){ return 0;}
+
+    oddNumber(--n);
+
+    if(Math.floor(n%2) == 1){
+        console.log(n);
+    }
+}
+
+
+// oddNumber(20);
