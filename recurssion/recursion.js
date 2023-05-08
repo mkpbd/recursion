@@ -76,4 +76,33 @@ function numberPrintDecendingOrder(n) {
 }
 
 
-numberPrintDecendingOrder(20);
+// numberPrintDecendingOrder(20);
+
+
+
+function searchRecursivelyArray(array, index = 0, target) { 
+
+    if(!Array.isArray(array)){
+        return false;
+    }
+
+    if(target == array[index]){
+
+        return true;
+    }
+ 
+
+    if(target != array[index]){
+       return searchRecursivelyArray(array, ++index, target);
+    }
+ 
+
+    return false;
+  
+    
+
+
+}
+
+
+// console.log(searchRecursivelyArray([4,5,6,7,8,9,0,10, 12,15], 0, 10));
