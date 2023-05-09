@@ -89,4 +89,4 @@ function search(array, target, start= 0, end =0) {
 
 const sortedArray = [3,4,5,6,7,8,9,10];
 
-console.log(search(sortedArray, 8,0, sortedArray.length));
+// console.log(search(sortedArray, 8,0, sortedArray.length));
