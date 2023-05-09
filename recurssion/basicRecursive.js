@@ -28,3 +28,45 @@ function print2(n) {
 
 
 // print2(10);
+
+
+function odd(n) {
+
+    // basic condition to stop function calls
+
+    if (n < 0) return 0;
+
+
+
+    // function call itself
+  
+    odd(n-1);
+
+        // body  odd number print   
+        let j = n % 2 == 1;
+        j && console.log(n);
+
+}
+
+// odd(50); 
+
+
+function evenNumber(n) {
+
+    // basic condition to stop function calls
+
+    if (n < 0) return 0;
+
+
+
+    // function call itself
+  
+    evenNumber(n-1);
+
+        // body  odd number print   
+        let j = n % 2 == 0;
+        j && console.log(n);
+
+}
+
+evenNumber(50);
